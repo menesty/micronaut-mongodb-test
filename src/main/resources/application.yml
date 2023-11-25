@@ -2,13 +2,7 @@ micronaut:
   application:
     name: ecochargerent
   security:
-    authentication: bearer
-    token:
-      jwt:
-        signatures:
-          secret:
-            generator:
-              secret: ${JWT_GENERATOR_SIGNATURE_SECRET:pleaseChangeThisSecretForANewOne}
+    enable: false
   data:
     mongodb:
       driver-type: reactive
@@ -19,7 +13,7 @@ flyway:
       enabled: true
 
 mongodb:
-  uri: mongodb+srv://ecocharge:jlgZpiOXseSLVnJ9@cluster0.u8am1ed.mongodb.net/ecocharge?retryWrites=true&w=majority
+  uri:
 
 jackson:
   serialization:
