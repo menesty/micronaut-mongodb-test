@@ -1,0 +1,31 @@
+micronaut:
+  application:
+    name: ecochargerent
+  security:
+    authentication: bearer
+    token:
+      jwt:
+        signatures:
+          secret:
+            generator:
+              secret: ${JWT_GENERATOR_SIGNATURE_SECRET:pleaseChangeThisSecretForANewOne}
+  data:
+    mongodb:
+      driver-type: reactive
+      create-collections: true
+flyway:
+  datasources:
+    default:
+      enabled: true
+
+mongodb:
+  uri: mongodb+srv://ecocharge:jlgZpiOXseSLVnJ9@cluster0.u8am1ed.mongodb.net/ecocharge?retryWrites=true&w=majority
+
+jackson:
+  serialization:
+    writeEnumsUsingToString: true
+    writeDatesAsTimestamps: false
+  deserialization:
+    readEnumsUsingToString: true
+    failOnUnknownProperties: false
+    failOnInvalidSubtype: false

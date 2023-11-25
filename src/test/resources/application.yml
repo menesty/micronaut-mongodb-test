@@ -1,0 +1,25 @@
+micronaut:
+  application:
+    name: ecochargerent
+  security:
+    enabled: false
+  data:
+    mongodb:
+      driver-type: reactive
+
+flyway:
+  datasources:
+    default:
+      enabled: true
+
+mongodb:
+  uri:
+
+jackson:
+  serialization:
+    writeEnumsUsingToString: true
+    writeDatesAsTimestamps: false
+  deserialization:
+    readEnumsUsingToString: true
+    failOnUnknownProperties: false
+    failOnInvalidSubtype: false

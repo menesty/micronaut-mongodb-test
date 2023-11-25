@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.mousescale.api
+testFramework: junit
+sourceLanguage: java
+buildTool: maven
+features: [app-name, data, data-mongodb-reactive, flyway, graalvm, http-client, java, java-application, junit, logback, lombok, maven, maven-enforcer-plugin, micronaut-aop, micronaut-aot, micronaut-http-validation, mockito, mockserver-client-java, netty-server, reactor, reactor-http-client, readme, security-annotations, security-jwt, serialization-jackson, shade, test-resources, validation, yaml, yaml-build]
